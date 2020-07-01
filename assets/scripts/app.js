@@ -36,6 +36,7 @@ const clearInputs = () => {
 };
 const toggleBackdrop = () => {
   backdrop.classList.toggle("visible");
+  clearInputs();
 };
 
 const backdropHandler = () => {
@@ -140,7 +141,7 @@ const addMovieHandler = () => {
     closeMovieButtonHandler();
     initialTextLogic();
     updateUI(movieData.id, movieData.title, movieData.URL, movieData.rating);
-    //clearInputs();
+    clearInputs();
   }
 };
 
