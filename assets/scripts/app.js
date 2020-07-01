@@ -65,6 +65,7 @@ const deleteMovie = (movieId) => {
   referenceElement.children[index].remove();
   deleteMovieModel.classList.remove("visible");
   toggleBackdrop();
+  initialTextLogic();
   //referenceElement.removeChild(referenceElement.children[movieId]);
 };
 
